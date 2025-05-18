@@ -6,14 +6,14 @@ from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 
 # Download required NLTK data (if not already downloaded)
-nltk.download('stopwords')
-nltk.download('wordnet')
+#nltk.download('stopwords')
+#nltk.download('wordnet')
 
 # Load model and vectorizer
 model = joblib.load("sentiment_model.pkl")
 vectorizer = joblib.load("tfidf_vectorizer.pkl")
 
-# Preprocessing
+# Preprocessing Data
 stop_words = set(stopwords.words('english'))
 lemmatizer = WordNetLemmatizer()
 
